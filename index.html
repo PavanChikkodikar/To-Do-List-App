@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+           <h2 >To-Do List  <img src="images/icon.png" alt=""></h2> 
+           <div class="row">
+            <input type="text" id="input-box" placeholder="Add your text here">
+            <button onclick="addTask()">Add</button>
+           </div>
+           <ul id="list-container">
+            <li>
+                <div class="task">
+                    <select class="priority-dropdown">
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>
+                        <option value="low">Low</option>
+                    </select>
+                </div>
+                <span class="delete-task">&#x2716;</span>
+            </li>
+        </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 My To-Do List App. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/pavan-chikkodikar-9054171ba/" target="_blank" class="icon-link"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/PavanChikkodikar" target="_blank" class="icon-link"><i class="fab fa-github"></i></a>
+            <a href="https://www.facebook.com/pavan.chikkodikar" target="_blank" class="icon-link"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/Pavan16409901" target="_blank" class="icon-link"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/pavan_chikkodikar/" target="_blank" class="icon-link"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+    
+    
+<script src="script.js"></script>
+</body>
+</html>
