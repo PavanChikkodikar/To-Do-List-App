@@ -72,6 +72,7 @@ button:hover {
 }
 
 
+
 ul li {
     list-style: none;
     font-size: 17px;
@@ -119,6 +120,7 @@ ul li span {
 ul li span:hover {
     background: #edeef0;
 }
+
 
 .priority-dropdown {
     margin-left: auto;
@@ -168,6 +170,11 @@ ul li span:hover {
     color: #ff5945;
 }
 
+.scrollable-list {
+    max-height: 300px; 
+    overflow-y: auto; 
+    margin-top: 10px; 
+}
 
 @keyframes gradientChange {
     0% {
