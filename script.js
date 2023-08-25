@@ -22,6 +22,26 @@ function addTask() {
     saveData();
 }
 
+function clearAllTasks() {
+    listContainer.innerHTML = "";
+    saveData();
+}
+
+function deleteAllTasks() {
+    listContainer.innerHTML = "";
+    saveData();
+}
+
+inputBox.addEventListener("keydown", function(e) {
+    if (e.key === "Enter") {
+        addTask();
+    }
+    if (e.key === "Escape") {
+        inputBox.value = ""; 
+        inputBox.blur(); 
+    }
+});
+
 
 listContainer.addEventListener("click",function(e){
     if(e.target.tagName === "LI"){
