@@ -10,6 +10,7 @@
     min-height: 100vh;
     background: linear-gradient(135deg, #153677, #4e085f);
     padding: 10px;
+    animation: gradientChange 15s infinite alternate;
 }
 
 .todo-app {
@@ -64,6 +65,12 @@ button {
     cursor: pointer;
     border-radius: 40px;
 }
+
+button:hover {
+    background: #ff715d;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 
 ul li {
     list-style: none;
@@ -124,6 +131,11 @@ ul li span:hover {
     flex: 1;
     display: flex;
     align-items: center;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .delete-task {
@@ -154,8 +166,32 @@ ul li span:hover {
 
 .icon-link:hover {
     color: #ff5945;
-    /* Change color on hover */
 }
+
+
+@keyframes gradientChange {
+    0% {
+        background: linear-gradient(135deg, #153677, #4e085f);
+    }
+    100% {
+        background: linear-gradient(135deg, #4e085f, #153677);
+    }
+}
+
+li.checked {
+    animation: fadeOut 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
 
 /* Adjustments for screens up to 768px wide */
 @media (max-width: 768px) {
